@@ -34,7 +34,7 @@ let setIndicator = () => {
       indicator_msg.innerText = "strong";
       break;
     case 4:
-      indicator_msg.innerText = "best";
+      indicator_msg.innerText = "Secured";
       break;
   }
   for (let i = 0; i < count; i++) {
