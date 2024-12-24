@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div class="pass-gen">
+        <div class="text-box">
+          <input type="text" id="password" readonly />
+          <div class="btn-container copy">
+            <box-icon name="copy" rotate="270" color="#ffffff"></box-icon>
+          </div>
+          <div class="btn-container refresh">
+            <box-icon name="refresh" color="#ffffff"></box-icon>
+          </div>
+        </div>
+        <div class="slider-container">
+          <span id="lengthText">Length: 8</span>
+          <input
+            type="range"
+            id="lengthEl"
+            class="range"
+            min="6"
+            max="30"
+            value="8"
+          />
+        </div>
+        <div class="option-container">
+          <div class="options">
+            <div class="option">
+              <input type="checkbox" name="checkbox" id="uppercase" checked />
+              <label for="uppercase">
+                <div class="cont">
+                  <div class="button"></div>
+                  <span>Upper case</span>
+                </div>
+              </label>
+            </div>
+
+            <div class="option">
+              <input type="checkbox" name="checkbox" id="lowercase" checked />
+              <label for="lowercase">
+                <div class="cont">
+                  <div class="button"></div>
+                  <span>Lower case</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="options two">
+            <div class="option">
+              <input type="checkbox" name="checkbox" id="numbers" checked />
+              <label for="numbers">
+                <div class="cont">
+                  <div class="button"></div>
+                  <span>Numbers</span>
+                </div>
+              </label>
+            </div>
+
+            <div class="option">
+              <input type="checkbox" name="checkbox" id="symbols" checked />
+              <label for="symbols">
+                <div class="cont">
+                  <div class="button"></div>
+                  <span>Symbols</span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="strength">
+          <span>Password strength</span>
+          <div class="strength-bar">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="remarks">
+          <hr />
+          <p>© 2024 Olacodes. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
