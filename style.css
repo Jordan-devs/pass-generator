@@ -203,6 +203,15 @@ input[type="checkbox"] {
   display: none;
 }
 
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active {
+  outline: none;
+  background-color: transparent;
+  --webkit-appearance: none;
+  --webkit-tap-highlight-color: transparent;
+  box-shadow: none;
+}
+
 .cont {
   display: flex;
   justify-content: center;
